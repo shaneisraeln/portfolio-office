@@ -1,0 +1,178 @@
+.window-content-inner {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.content-title {
+    color: #00ff00;
+    font-size: 16px;
+    margin-bottom: 12px;
+    text-shadow: 0 0 8px rgba(0, 255, 0, 0.8);
+}
+
+.content-section {
+    margin-bottom: 24px;
+}
+
+.content-text {
+    margin-bottom: 8px;
+    color: #00ff00;
+}
+
+.prompt {
+    color: #00cc00;
+    margin-right: 8px;
+}
+
+.file {
+    margin-right: 8px;
+}
+
+/* Projects */
+.project-item {
+    margin-bottom: 20px;
+    padding: 12px;
+    background: rgba(0, 255, 0, 0.05);
+    border-left: 3px solid #00ff00;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.project-name {
+    font-weight: bold;
+    color: #00ff00;
+    font-size: 15px;
+}
+
+.project-status {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 3px;
+}
+
+.status-live {
+    background: rgba(0, 255, 0, 0.2);
+    color: #00ff00;
+}
+
+.status-completed {
+    background: rgba(0, 200, 255, 0.2);
+    color: #00ccff;
+}
+
+.status-in-progress {
+    background: rgba(255, 200, 0, 0.2);
+    color: #ffcc00;
+}
+
+.project-description {
+    color: #00dd00;
+    margin-bottom: 6px;
+}
+
+.project-tech {
+    color: #00aa00;
+    font-size: 12px;
+}
+
+/* Skills */
+.skill-category {
+    margin-bottom: 16px;
+}
+
+.skill-category-title {
+    color: #00ff00;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.skill-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-left: 20px;
+}
+
+.skill-tag {
+    background: rgba(0, 255, 0, 0.1);
+    border: 1px solid #00ff00;
+    padding: 4px 12px;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #00ff00;
+}
+
+/* Contact */
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+    padding: 12px;
+    background: rgba(0, 255, 0, 0.05);
+    border-radius: 4px;
+}
+
+.contact-icon {
+    font-size: 24px;
+}
+
+.contact-label {
+    color: #00cc00;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.contact-link {
+    color: #00ff00;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.contact-link:hover {
+    border-bottom-color: #00ff00;
+}
+
+/* Terminal */
+.terminal-content {
+    height: 100%;
+    overflow-y: auto;
+    font-family: 'Courier New', monospace;
+    padding: 0;
+}
+
+.terminal-history {
+    margin-bottom: 8px;
+}
+
+.terminal-line {
+    margin-bottom: 2px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.terminal-input-form {
+    display: flex;
+    align-items: center;
+}
+
+.terminal-prompt {
+    color: #00ff00;
+    margin-right: 8px;
+}
+
+.terminal-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    outline: none;
+}

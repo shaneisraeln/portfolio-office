@@ -29,6 +29,9 @@ app.post('/api/send-email', (req, res) => {
         host: 'smtp.gmail.com',
         port: 587,
         auth: {
+            // Update these environment variables with Shane's email credentials:
+            // FOLIO_EMAIL should be set to Shane's email address
+            // FOLIO_PASSWORD should be set to Shane's app password
             user: process.env.FOLIO_EMAIL,
             pass: process.env.FOLIO_PASSWORD,
         },
@@ -39,8 +42,8 @@ app.post('/api/send-email', (req, res) => {
         .then(() => {
             transporter
                 .sendMail({
-                    from: `"${name}" <henryheffernan.folio@gmail.com>`, // sender address
-                    to: 'henryheffernan@gmail.com, henryheffernan.folio@gmail.com', // list of receivers
+                    from: `"${name}" <shaneisrael.folio@gmail.com>`, // sender address
+                    to: 'shaneisrael2006@gmail.com, shaneisrael.folio@gmail.com', // list of receivers
                     subject: `${name} <${email}> ${
                         company ? `from ${company}` : ''
                     } submitted a contact form`, // Subject line
