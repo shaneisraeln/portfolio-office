@@ -13,6 +13,7 @@
     "scripts": {
         "start": "node server/index.ts",
         "build": "npm run build:os && webpack --config ./bundler/webpack.prod.js && npm run copy:os",
+        "vercel-build": "npm run build:os && webpack --config ./bundler/webpack.prod.js && npm run copy:os && echo 'Build completed successfully'",
         "build:os": "cd os && npm install && npm run build",
         "copy:os": "node -e \"require('fs-extra').copySync('os/dist', 'public/os-dist')\"",
         "dev": "webpack serve --config ./bundler/webpack.dev.js",
@@ -20,8 +21,7 @@
         "test": "jest",
         "test:watch": "jest --watch",
         "deploy:build": "npm run build",
-        "deploy:serve": "npm start",
-        "postinstall": "npm run build"
+        "deploy:serve": "npm start"
     },
     "dependencies": {
         "@babel/core": "^7.16.12",
