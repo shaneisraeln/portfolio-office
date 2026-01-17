@@ -24,11 +24,23 @@
             "dest": "/server/index.ts"
         },
         {
+            "src": "/models/(.*)",
+            "dest": "/models/$1"
+        },
+        {
+            "src": "/textures/(.*)",
+            "dest": "/textures/$1"
+        },
+        {
+            "src": "/audio/(.*)",
+            "dest": "/audio/$1"
+        },
+        {
             "src": "/os-dist/(.*)",
             "dest": "/os-dist/$1"
         },
         {
-            "src": "/(.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|mp3|wav|mp4|woff|woff2|ttf|eot))",
+            "src": "/(.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|mp3|wav|mp4|woff|woff2|ttf|eot|glb))",
             "dest": "/$1"
         },
         {
