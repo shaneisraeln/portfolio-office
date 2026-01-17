@@ -22,28 +22,33 @@ const AboutContent = () => {
       <h2 className="content-title">$ cat bio.txt</h2>
       <div className="content-section">
         <p className="content-text">
-          I'm a passionate Software Engineer and Machine Learning Engineer with a strong focus on 
-          Artificial Intelligence, Machine Learning, Data Structures & Algorithms, and building 
-          real-world software systems.
+          👋 Hey, I'm Shane Israel! I build wild ideas — from rocket-powered wildfire solutions 
+          to gadgets that detect phones in exam halls.
         </p>
         <p className="content-text">
-          Currently pursuing my undergraduate degree in Computer Science, I actively participate 
-          in hackathons, build innovative projects, and continuously expand my technical expertise.
+          🤖 AI tinkerer who mixes APIs like cocktails to see what explodes (creatively). 
+          I've messed around with cybersecurity and Linux until the terminal finally respected me.
         </p>
         <p className="content-text">
-          I'm seeking internships and full-time software engineering roles where I can contribute 
-          to impactful projects and grow as a developer.
+          📚 Currently juggling data structures, Bayesian estimation, and whatever else the 
+          internet throws at me. I occasionally teach people how to write job application 
+          letters and pretend to be a responsible adult.
+        </p>
+        <p className="content-text">
+          🎯 I love hackathons, crazy problem statements, and turning chaos into working code. 
+          Always looking for the next wild idea to bring to life!
         </p>
       </div>
 
       <h2 className="content-title">$ ls interests/</h2>
       <div className="content-section">
         <p className="content-text">
-          <span className="file">📁</span> Artificial Intelligence & Machine Learning<br />
-          <span className="file">📁</span> Full-Stack Web Development<br />
-          <span className="file">📁</span> Data Structures & Algorithms<br />
-          <span className="file">📁</span> Hackathons & Competitive Programming<br />
-          <span className="file">📁</span> Open Source Contributions
+          <span className="file">🚀</span> Wild hackathon projects & crazy ideas<br />
+          <span className="file">🤖</span> AI/ML experimentation & API mixing<br />
+          <span className="file">🛡️</span> Cybersecurity & Linux tinkering<br />
+          <span className="file">📊</span> Data structures & Bayesian estimation<br />
+          <span className="file">🎤</span> Teaching & mentoring others<br />
+          <span className="file">💥</span> Turning chaos into working code
         </p>
       </div>
     </div>

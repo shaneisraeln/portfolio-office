@@ -1,6 +1,9 @@
 .window-content-inner {
     font-size: 14px;
     line-height: 1.6;
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 8px;
 }
 
 .content-title {
@@ -10,6 +13,7 @@
     text-shadow: 0 0 8px rgba(0, 255, 0, 0.8);
 }
 
+/* Ensure scrollable content */
 .content-section {
     margin-bottom: 24px;
 }
@@ -28,12 +32,13 @@
     margin-right: 8px;
 }
 
-/* Projects */
+/* Make sure long project descriptions can scroll */
 .project-item {
     margin-bottom: 20px;
     padding: 12px;
     background: rgba(0, 255, 0, 0.05);
     border-left: 3px solid #00ff00;
+    word-wrap: break-word;
 }
 
 .project-header {

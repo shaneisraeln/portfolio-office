@@ -72,6 +72,21 @@ npm test:watch
 
 ## Production Deployment
 
+### Quick Deploy Options
+
+**Vercel (Recommended):**
+1. Push code to GitHub
+2. Connect repository to Vercel
+3. Set environment variables: `FOLIO_EMAIL`, `FOLIO_PASSWORD`
+4. Deploy automatically
+
+**Netlify:**
+1. Push code to GitHub  
+2. Connect repository to Netlify
+3. Set environment variables: `FOLIO_EMAIL`, `FOLIO_PASSWORD`
+4. Deploy automatically
+
+**Manual Deployment:**
 ```bash
 # Install dependencies if not already done
 npm install
@@ -87,6 +102,17 @@ The build process will:
 1. Build the custom OS (ShaneOS)
 2. Build the main portfolio
 3. Copy the OS to the portfolio's public folder
+
+### Email Configuration
+
+For the contact form to work, set up Gmail App Password:
+1. Enable 2-Step Verification in Google Account
+2. Generate App Password: Google Account > Security > 2-Step Verification > App passwords
+3. Set environment variables:
+   - `FOLIO_EMAIL`: Your Gmail address
+   - `FOLIO_PASSWORD`: Your 16-character App Password
+
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed deployment instructions.
 
 ## Features
 

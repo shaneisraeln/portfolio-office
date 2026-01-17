@@ -2,11 +2,14 @@
     position: absolute;
     min-width: 400px;
     min-height: 300px;
+    max-height: 80vh;
     background: #0a0a0a;
     border: 2px solid #00ff00;
     box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
     display: flex;
     flex-direction: column;
+    resize: both;
+    overflow: hidden;
 }
 
 .window-titlebar {
@@ -50,6 +53,10 @@
 .window-content {
     flex: 1;
     padding: 20px;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     color: #00ff00;
+    max-height: calc(100vh - 200px);
+    scrollbar-width: thin;
+    scrollbar-color: #00ff00 #1a1a1a;
 }

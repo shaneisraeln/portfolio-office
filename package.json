@@ -1,6 +1,15 @@
 {
-    "repository": "#",
+    "name": "shane-portfolio",
+    "version": "1.0.0",
+    "description": "Shane Israel N's Interactive 3D Portfolio with Custom OS",
+    "main": "server/index.ts",
+    "repository": "https://github.com/shaneisraeln/portfolio-website",
+    "author": "Shane Israel N",
     "license": "UNLICENSED",
+    "engines": {
+        "node": ">=16.0.0",
+        "npm": ">=8.0.0"
+    },
     "scripts": {
         "start": "node server/index.ts",
         "build": "npm run build:os && webpack --config ./bundler/webpack.prod.js && npm run copy:os",
@@ -9,7 +18,10 @@
         "dev": "webpack serve --config ./bundler/webpack.dev.js",
         "dev:os": "cd os && npm run dev",
         "test": "jest",
-        "test:watch": "jest --watch"
+        "test:watch": "jest --watch",
+        "deploy:build": "npm run build",
+        "deploy:serve": "npm start",
+        "postinstall": "npm run build"
     },
     "dependencies": {
         "@babel/core": "^7.16.12",
@@ -44,6 +56,7 @@
         "raw-loader": "^4.0.2",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
+        "serverless-http": "^3.2.0",
         "stats.js": "^0.17.0",
         "style-loader": "^3.3.1",
         "three": "^0.137.5",
